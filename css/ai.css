@@ -1,0 +1,307 @@
+/* ==========================
+        Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f8ff;
+    display:flex;
+}
+
+/* ==========================
+        Sidebar
+========================== */
+
+.sidebar{
+
+    width:270px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+
+    background:linear-gradient(180deg,#2563eb,#1e40af);
+
+    color:white;
+
+    padding:30px 20px;
+
+}
+
+.logo{
+
+    text-align:center;
+    margin-bottom:40px;
+
+}
+
+.logo img{
+
+    width:80px;
+    margin-bottom:15px;
+    border-radius:50%;
+
+}
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+.sidebar ul li{
+
+    margin:15px 0;
+
+}
+
+.sidebar ul li a{
+
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:15px;
+    border-radius:12px;
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.active a{
+
+    background:white;
+    color:#2563eb !important;
+
+}
+
+/* ==========================
+        Main
+========================== */
+
+.main{
+
+    margin-left:270px;
+    width:100%;
+    padding:40px;
+
+}
+
+.main h1{
+
+    color:#111827;
+
+}
+
+.main p{
+
+    color:#6b7280;
+    margin:10px 0 30px;
+
+}
+
+/* ==========================
+      Chat Box
+========================== */
+
+.chat-box{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.ai-message{
+
+    background:#eff6ff;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    color:#111827;
+
+}
+
+.user-input{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.user-input input{
+
+    flex:1;
+
+    padding:16px;
+
+    border:2px solid #dbeafe;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+.user-input button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 30px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.user-input button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================
+      Tips
+========================== */
+
+.tips{
+
+    margin-top:40px;
+
+}
+
+.tips h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+.tip-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+.tip-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.tip-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.tip-card{
+
+    font-size:18px;
+
+}
+
+.tip-card h3{
+
+    margin:15px 0;
+
+}
+
+/* ==========================
+      Disclaimer
+========================== */
+
+.disclaimer{
+
+    margin-top:40px;
+
+    background:#fff7ed;
+
+    border-left:5px solid orange;
+
+    padding:20px;
+
+    border-radius:10px;
+
+    color:#7c2d12;
+
+}
+
+/* ==========================
+      Responsive
+========================== */
+
+@media(max-width:900px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main{
+
+margin-left:0;
+
+}
+
+.user-input{
+
+flex-direction:column;
+
+}
+
+.tip-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

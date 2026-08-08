@@ -1,0 +1,1003 @@
+/* ==========================
+   Google Font & Reset
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f9ff;
+}
+
+/* ==========================
+        Navbar
+========================== */
+
+nav{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 8%;
+
+    background:white;
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    z-index:1000;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:55px;
+    margin-right:12px;
+    border-radius:50%;
+
+}
+
+.logo h2{
+
+    color:#2563eb;
+
+    font-size:28px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+}
+
+nav ul li{
+
+    margin-left:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:#1f2937;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#2563eb;
+
+}
+
+.btn{
+
+    background:#2563eb;
+
+    color:white !important;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+}
+
+.btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================
+        Hero Section
+========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 8% 60px;
+
+    background:linear-gradient(135deg,#eff6ff,#dbeafe);
+
+}
+
+.hero-left{
+
+    width:50%;
+
+}
+
+.hero-left h1{
+
+    font-size:58px;
+
+    color:#111827;
+
+    line-height:1.2;
+
+}
+
+.hero-left p{
+
+    margin-top:25px;
+
+    font-size:18px;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+.buttons{
+
+    margin-top:40px;
+
+}
+
+.primary-btn{
+
+    text-decoration:none;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    margin-right:20px;
+
+    transition:.3s;
+
+}
+
+.primary-btn:hover{
+
+    background:#1d4ed8;
+
+}
+
+.secondary-btn{
+
+    text-decoration:none;
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+/* ==========================
+      Hero Right
+========================== */
+
+.hero-right{
+
+    width:45%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.logo-card{
+
+    width:420px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+    animation:float 4s infinite ease-in-out;
+
+}
+
+.logo-card img{
+
+    width:170px;
+
+    margin-bottom:20px;
+
+}
+
+.logo-card h2{
+
+    color:#2563eb;
+
+    font-size:34px;
+
+}
+
+.logo-card p{
+
+    color:#6b7280;
+
+    margin:20px 0;
+
+}
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+
+}
+
+.features div{
+
+    background:#eff6ff;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.features div:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================
+       Animation
+========================== */
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ==========================
+     Responsive
+========================== */
+
+@media(max-width:900px){
+
+nav{
+
+padding:0 20px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.hero-left{
+
+width:100%;
+
+}
+
+.hero-right{
+
+width:100%;
+
+margin-top:50px;
+
+}
+
+.logo-card{
+
+width:100%;
+
+}
+
+.hero-left h1{
+
+font-size:42px;
+
+}
+
+}
+
+/* ==========================
+        About Section
+========================== */
+
+.about{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:100px 8%;
+
+}
+
+.about-left{
+
+    width:45%;
+
+}
+
+.about-left h4{
+
+    color:#2563eb;
+
+    letter-spacing:2px;
+
+}
+
+.about-left h2{
+
+    font-size:42px;
+
+    margin:20px 0;
+
+    color:#111827;
+
+}
+
+.about-left p{
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+.about-btn{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+}
+
+.about-right{
+
+    width:50%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    color:#6b7280;
+
+}
+
+/* ==========================
+      Services Section
+========================== */
+
+.services{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+    background:#eff6ff;
+
+}
+
+.services h4{
+
+    color:#2563eb;
+
+    letter-spacing:2px;
+
+}
+
+.services h2{
+
+    font-size:42px;
+
+    margin:15px 0;
+
+    color:#111827;
+
+}
+
+.service-text{
+
+    color:#6b7280;
+
+    margin-bottom:50px;
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.service-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.service-card i{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+    color:#2563eb;
+
+}
+
+.service-card:hover i{
+
+    color:white;
+
+}
+
+.service-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.service-card p{
+
+    line-height:1.7;
+
+}
+
+@media(max-width:900px){
+
+.service-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ==========================
+      Why Choose Us
+========================== */
+
+.why-us{
+
+    padding:100px 8%;
+
+    text-align:center;
+
+}
+
+.why-us h4{
+
+    color:#2563eb;
+
+    letter-spacing:2px;
+
+}
+
+.why-us h2{
+
+    font-size:42px;
+
+    margin:20px 0 60px;
+
+}
+
+.why-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.why-box{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+
+}
+
+.why-box:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+    transform:translateY(-12px);
+
+}
+
+.why-box i{
+
+    font-size:50px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.why-box:hover i{
+
+    color:white;
+
+}
+
+@media(max-width:900px){
+
+.why-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==========================
+      Statistics Section
+========================== */
+
+.stats{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:80px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+.stat-box{
+
+    padding:20px;
+
+}
+
+.stat-box i{
+
+    font-size:50px;
+
+    margin-bottom:20px;
+
+}
+
+.stat-box h2{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.stat-box p{
+
+    font-size:18px;
+
+}
+
+@media(max-width:900px){
+
+.stats{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
+
+/* ==========================
+      Healthcare Ecosystem
+========================== */
+
+.partners{
+
+    padding:100px 8%;
+    text-align:center;
+    background:#f8fbff;
+
+}
+
+.partners h4{
+
+    color:#2563eb;
+    letter-spacing:2px;
+
+}
+
+.partners h2{
+
+    font-size:42px;
+    margin:20px 0;
+
+}
+
+.partner-text{
+
+    color:#6b7280;
+    max-width:750px;
+    margin:0 auto 50px;
+    line-height:1.8;
+
+}
+
+.partner-container{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+
+}
+
+.partner-card{
+
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.4s;
+
+}
+
+.partner-card:hover{
+
+    background:#2563eb;
+    color:white;
+    transform:translateY(-10px);
+
+}
+
+.partner-card i{
+
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:20px;
+
+}
+
+.partner-card:hover i{
+
+    color:white;
+
+}
+
+.partner-card h3{
+
+    margin-bottom:15px;
+
+}
+
+.partner-card p{
+
+    line-height:1.7;
+
+}
+
+@media(max-width:900px){
+
+.partner-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+.active {
+    text-decoration: none;
+    color:black;
+}
+
+.active:hover {
+    text-decoration: underline;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+/* ==============================
+   DOCTOR BLUE STRIP
+================================ */
+
+.doctor-strip {
+    width: 100%;
+    min-height: 360px;
+
+    background: #2864e8;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 55px 5%;
+    box-sizing: border-box;
+
+    color: white;
+}
+
+
+/* Doctor Card */
+
+.doctor-card {
+    text-align: center;
+    padding: 20px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* Hover */
+
+.doctor-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* Doctor Icon */
+
+.doctor-icon {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    font-size: 48px;
+    color: white;
+}
+
+
+/* Doctor Name */
+
+.doctor-card h3 {
+    margin: 0 0 10px;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    color: white;
+}
+
+
+/* Specialization */
+
+.doctor-card p {
+    margin: 0 0 12px;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    color: white;
+}
+
+
+/* Timing */
+
+.doctor-card span {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+
+    .doctor-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .doctor-strip {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+    }
+
+    .doctor-card {
+        padding: 15px;
+    }
+
+}

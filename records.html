@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Health Records | MediCare AI</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <img src="images/logo.png">
+
+            <h2>MediCare AI</h2>
+
+            <p>Your Smart Health Partner</p>
+
+        </div>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="medicine.html">
+                    <i class="fa-solid fa-pills"></i>
+                    Medicine Reminder
+                </a>
+            </li>
+
+            <li>
+                <a href="appointment.html">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    Appointment
+                </a>
+            </li>
+
+            <li>
+                <a href="ai.html">
+                    <i class="fa-solid fa-robot"></i>
+                    AI Assistant
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="records.html">
+                    <i class="fa-solid fa-file-medical"></i>
+                    Health Records
+                </a>
+            </li>
+
+            <li>
+                <a href="emergency.html">
+                    <i class="fa-solid fa-truck-medical"></i>
+                    Emergency SOS
+                </a>
+            </li>
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Back
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <div class="main">
+
+        <h1>📄 Health Records</h1>
+
+        <p>Manage all your medical reports in one place.</p>
+
+
+        <!-- Uploaded records will appear here -->
+
+        <div class="record-container" id="recordContainer">
+
+        </div>
+
+
+        <!-- Upload -->
+
+        <div class="upload-box">
+
+            <h2>Upload New Report</h2>
+
+            <input
+                type="file"
+                id="reportFile"
+                accept=".pdf,.jpg,.jpeg,.png"
+            >
+
+            <button
+                type="button"
+                id="uploadReportBtn">
+
+                Upload Report
+
+            </button>
+
+            <p id="uploadMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <script src="js/records.js"></script>
+    <script src="js/theme.js"></script>
+
+</body>
+
+</html>

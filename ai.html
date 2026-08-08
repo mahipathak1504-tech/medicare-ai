@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AI Health Assistant</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/ai.css">
+<link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+
+<h2>MediCare AI</h2>
+<p>Your Smart Health Partner</p>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="ai.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+            
+<li><a href="emergency.html"><i class="fa-solid fa-truck-medical"></i> Emergency SOS</a></li>
+
+<li>
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</a>
+
+</li>
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+<li>
+    <a href="dashboard.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+<li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>🤖 AI Health Assistant</h1>
+
+<p>
+
+Ask your health-related questions anytime.
+
+</p>
+
+<!-- Chat Box -->
+
+<div class="chat-box" id="chatBox">
+
+<div class="ai-message">
+
+🤖 Hello!
+
+How can I help you today?
+
+</div>
+
+<div class="user-input">
+
+<input
+type="text"
+ id="userMessage"
+placeholder="Describe your symptoms...">
+
+<button onclick="sendMessage()">
+
+<i class="fa-solid fa-paper-plane"></i>
+
+Ask AI
+
+</button>
+
+</div>
+
+</div>
+
+<!-- Health Tips -->
+
+<div class="tips">
+
+<h2>Health Tips</h2>
+
+<div class="tip-container">
+
+<div class="tip-card">
+
+💧
+
+<h3>Drink Water</h3>
+
+<p>
+
+Drink at least 8 glasses of water daily.
+
+</p>
+
+</div>
+
+<div class="tip-card">
+
+🥗
+
+<h3>Healthy Food</h3>
+
+<p>
+
+Eat fresh fruits and vegetables every day.
+
+</p>
+
+</div>
+
+<div class="tip-card">
+
+🏃
+
+<h3>Exercise</h3>
+
+<p>
+
+Walk for 30 minutes daily.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<script src="js/ai.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

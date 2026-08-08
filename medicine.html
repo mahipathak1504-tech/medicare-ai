@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Medicine Reminder | MediCare AI</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/medicine.css">
+<link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/logo.png">
+
+        <h2>MediCare AI</h2>
+        <p>Your Smart Health Partner</p>
+
+    </div>
+
+    <ul>
+
+        <li>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i>
+                Dashboard
+            </a>
+        </li>
+
+        <li class="active">
+            <a href="medicine.html">
+                <i class="fa-solid fa-pills"></i>
+                Medicine Reminder
+            </a>
+        </li>
+
+        <li>
+            <a href="ai.html">
+                <i class="fa-solid fa-robot"></i>
+                AI Assistant
+            </a>
+        </li>            
+        <li><a href="emergency.html"><i class="fa-solid fa-truck-medical"></i> Emergency SOS</a></li>
+    <li>
+    <a href="dashboard.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+
+    </ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>💊 Medicine Reminder</h1>
+
+<p>
+Manage your daily medicines easily.
+</p>
+
+<!-- Add Medicine -->
+
+<div class="add-box">
+
+<h2>Add New Medicine</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Medicine Name">
+
+<input
+type="number"
+placeholder="Dosage (mg)">
+
+<input
+type="time">
+
+<input
+type="date">
+
+<select>
+
+<option>Daily</option>
+
+<option>Weekly</option>
+
+<option>Monthly</option>
+
+</select>
+
+<button>
+
+Add Medicine
+
+</button>
+
+</form>
+
+</div>
+
+<!-- Medicine List -->
+
+<div class="medicine-list">
+
+<h2>Today's Medicines</h2>
+
+<div class="medicine-card">
+
+<div>
+
+<h3>Paracetamol</h3>
+
+<p>500mg</p>
+
+<p>08:00 AM</p>
+
+</div>
+
+<div>
+
+<button class="edit">
+
+Edit</button>
+
+<button class="delete">
+
+Delete</button>
+
+</div>
+
+</div>
+
+<div class="medicine-card">
+
+<div>
+
+<h3>Vitamin D</h3>
+
+<p>1000 IU</p>
+
+<p>09:00 PM</p>
+
+</div>
+
+<div>
+
+<button class="edit">
+
+Edit</button>
+
+<button class="delete">
+
+Delete</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<script src="js/medicine.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

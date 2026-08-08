@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+display:flex;
+background:#f5f8ff;
+}
+
+.sidebar{
+width:270px;
+height:100vh;
+background:linear-gradient(180deg,#2563eb,#1e40af);
+color:white;
+position:fixed;
+padding:30px 20px;
+}
+
+.logo{
+text-align:center;
+margin-bottom:40px;
+}
+
+.logo img{
+width:80px;
+margin-bottom:15px;
+border-radius:50%;
+}
+
+.logo h2{
+
+font-size:26px;
+
+}
+
+.sidebar ul{
+list-style:none;
+}
+
+.sidebar ul li{
+margin:15px 0;
+}
+
+.sidebar ul li a{
+display:block;
+padding:15px;
+color:white;
+text-decoration:none;
+border-radius:12px;
+transition:.3s;
+}
+
+.sidebar ul li a:hover{
+background:rgba(255,255,255,.15);
+}
+
+.active a{
+background:white;
+color:#2563eb !important;
+}
+
+.main{
+margin-left:270px;
+width:100%;
+padding:40px;
+}
+
+.profile-container{
+display:flex;
+gap:30px;
+margin-top:30px;
+}
+
+.profile-card{
+width:30%;
+background:white;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.profile-card img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+.profile-card button{
+margin-top:20px;
+padding:12px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.details-card{
+flex:1;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.details-card h2{
+margin-bottom:25px;
+color:#2563eb;
+}
+
+.info{
+margin-bottom:20px;
+}
+
+.info label{
+display:block;
+margin-bottom:8px;
+font-weight:600;
+}
+
+.info input{
+width:100%;
+padding:14px;
+border:2px solid #dbeafe;
+border-radius:10px;
+background:#f8fbff;
+}
+
+.save{
+margin-top:20px;
+padding:15px 25px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+
+.sidebar{
+display:none;
+}
+
+.main{
+margin-left:0;
+}
+
+.profile-container{
+flex-direction:column;
+}
+
+.profile-card{
+width:100%;
+}
+
+}

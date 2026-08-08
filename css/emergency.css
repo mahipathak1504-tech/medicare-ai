@@ -1,0 +1,392 @@
+/* ==========================
+        Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    display:flex;
+    background:#f5f8ff;
+}
+
+/* ==========================
+        Sidebar
+========================== */
+
+.sidebar{
+
+    width:270px;
+    height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    background:linear-gradient(180deg,#2563eb,#1e40af);
+    color:white;
+    padding:30px 20px;
+
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.logo img{
+    width:80px;
+    margin-bottom:15px;
+    border-radius:50%;
+}
+
+.logo h2{
+    font-size:26px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    margin:15px 0;
+}
+
+.sidebar ul li a{
+
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:15px;
+    border-radius:12px;
+    transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+.active a{
+
+    background:white;
+    color:#2563eb !important;
+
+}
+
+/* ==========================
+        Main
+========================== */
+
+.main{
+
+    margin-left:270px;
+    width:100%;
+    padding:40px;
+
+}
+
+.main h1{
+
+    color:#111827;
+
+}
+
+.main p{
+
+    color:#6b7280;
+    margin:10px 0 30px;
+
+}
+
+/* ==========================
+        Layout
+========================== */
+
+.sos-container{
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+
+}
+
+/* ==========================
+        Cards
+========================== */
+
+.sos-card,
+.contact-card,
+.location-card{
+
+    background:white;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.location-card{
+
+    margin-top:30px;
+
+}
+
+.sos-card{
+
+    text-align:center;
+
+}
+
+/* ==========================
+      SOS Button
+========================== */
+
+.sos-btn{
+
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:none;
+    background:#ef4444;
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:30px 0;
+    animation:pulse 2s infinite;
+    transition:.3s;
+
+}
+
+.sos-btn:hover{
+
+    transform:scale(1.08);
+
+}
+
+@keyframes pulse{
+
+0%{
+box-shadow:0 0 0 0 rgba(239,68,68,.6);
+}
+
+70%{
+box-shadow:0 0 0 30px rgba(239,68,68,0);
+}
+
+100%{
+box-shadow:0 0 0 0 rgba(239,68,68,0);
+}
+
+}
+
+/* ==========================
+     Contacts
+========================== */
+
+.contact{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:18px;
+    margin-top:15px;
+    background:#f8fbff;
+    border-radius:12px;
+
+}
+
+.contact i{
+
+    color:#2563eb;
+    font-size:22px;
+
+}
+
+/* =========================================
+   LIVE LOCATION SECTION
+========================================= */
+
+.location-card {
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 32px;
+    margin-top: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.location-card h2 {
+    margin: 0 0 22px 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+
+    color: #111827;
+}
+
+
+/* Location Box */
+
+.map {
+    width: 100%;
+    min-height: 170px;
+
+    box-sizing: border-box;
+
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+
+    padding: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 25px;
+    flex-wrap: wrap;
+
+    font-family: Arial, sans-serif;
+    color: #475569;
+}
+
+
+/* Latitude & Longitude */
+
+.map p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+
+    color: #475569;
+}
+
+.map p::first-line {
+    color: #1e293b;
+}
+
+
+/* Google Maps Link */
+
+.map a {
+    display: inline-block;
+
+    color: #2563eb;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    line-height: 1.5;
+}
+
+.map a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+
+/* Get Location Button */
+
+.location-btn {
+    margin-top: 16px;
+
+    padding: 13px 24px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.location-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.location-btn:active {
+    transform: translateY(0);
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .location-card {
+        padding: 22px;
+        border-radius: 18px;
+    }
+
+    .location-card h2 {
+        font-size: 24px;
+    }
+
+    .map {
+        padding: 22px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .map p {
+        font-size: 16px;
+    }
+
+    .map a {
+        font-size: 16px;
+    }
+
+    .location-btn {
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+/* ==========================
+      Responsive
+========================== */
+
+@media(max-width:900px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main{
+
+margin-left:0;
+
+}
+
+.sos-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

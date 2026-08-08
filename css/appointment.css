@@ -1,0 +1,394 @@
+/* ==========================
+        Google Font
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+
+
+body{
+
+    background:#f5f8ff;
+    display:flex;
+
+}
+
+
+/* ==========================
+        Sidebar
+========================== */
+
+
+.sidebar{
+
+    width:270px;
+    height:100vh;
+
+    background:linear-gradient(180deg,#2563eb,#1e40af);
+
+    position:fixed;
+
+    left:0;
+    top:0;
+
+    color:white;
+
+    padding:30px 20px;
+
+}
+
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+
+.logo img{
+
+    width:80px;
+    margin-bottom:15px;
+    border-radius:50%;
+
+}
+
+
+.logo h2{
+
+    font-size:26px;
+
+}
+
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+
+.sidebar ul li{
+
+    margin:15px 0;
+
+    border-radius:12px;
+
+}
+
+
+.sidebar ul li a{
+
+    display:block;
+
+    padding:15px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+.sidebar ul li a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+.active a{
+
+    background:white;
+
+    color:#2563eb !important;
+
+    border-radius:12px;
+
+}
+
+
+
+/* ==========================
+        Main
+========================== */
+
+
+.main{
+
+    margin-left:270px;
+
+    width:100%;
+
+    padding:40px;
+
+}
+
+
+.main h1{
+
+    color:#111827;
+
+    margin-bottom:10px;
+
+}
+
+
+.main p{
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* ==========================
+     Appointment Form
+========================== */
+
+
+.appointment-form{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    margin-bottom:40px;
+
+}
+
+
+.appointment-form h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+
+.appointment-form form{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea{
+
+    padding:15px;
+
+    border:2px solid #dbeafe;
+
+    border-radius:10px;
+
+    outline:none;
+
+}
+
+
+.appointment-form textarea{
+
+    grid-column:span 2;
+
+}
+
+
+.appointment-form button{
+
+    grid-column:span 2;
+
+    padding:16px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+}
+
+
+.appointment-form button:hover{
+
+    background:#1d4ed8;
+
+}
+
+
+
+/* ==========================
+    Appointment History
+========================== */
+
+
+.history{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+
+.history h2{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+}
+
+
+.history-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f8fbff;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    border-left:5px solid #2563eb;
+
+}
+
+
+.history-card h3{
+
+    color:#111827;
+
+}
+
+
+.history-card p{
+
+    margin:5px 0;
+
+}
+
+
+.view{
+
+    background:#22c55e;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    margin-right:10px;
+
+    cursor:pointer;
+
+}
+
+
+.cancel{
+
+    background:#ef4444;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================
+        Responsive
+========================== */
+
+
+@media(max-width:900px){
+
+.sidebar{
+
+display:none;
+
+}
+
+
+.main{
+
+margin-left:0;
+
+}
+
+
+.appointment-form form{
+
+grid-template-columns:1fr;
+
+}
+
+
+.appointment-form textarea,
+.appointment-form button{
+
+grid-column:span 1;
+
+}
+
+
+.history-card{
+
+flex-direction:column;
+
+gap:20px;
+
+align-items:flex-start;
+
+}
+
+}

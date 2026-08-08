@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Appointment | MediCare AI</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/appointment.css">
+<link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<h2>MediCare AI</h2>
+<p>Your Smart Health Partner</p>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+<li>
+
+<a href="medicine.html">
+
+<i class="fa-solid fa-pills"></i>
+
+Medicine Reminder
+
+</a>
+
+</li>
+
+<li class="active">
+
+<a href="appointment.html">
+
+<i class="fa-solid fa-calendar-check"></i>
+
+Appointment
+
+</a>
+
+</li>
+
+<li>
+
+<a href="ai.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+
+</li>
+
+<li>
+        <a href="records.html">
+        <i class="fa-solid fa-file-medical"></i>
+            Health Records
+        </a>
+    </li>
+    <li>
+    <a href="emergency.html">
+
+    <i class="fa-solid fa-truck-medical"></i>
+
+    Emergency SOS
+
+    </a>
+
+    </li>
+    <li><a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact Us</a></li>
+
+
+<li>
+
+    <a href="dashboard.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>📅 Doctor Appointment</h1>
+
+<p>
+
+Book your appointment quickly and easily.
+
+</p>
+
+<!-- Booking Form -->
+
+<div class="appointment-form">
+
+<h2>Book Appointment</h2>
+
+<form>
+
+<input
+type="text"
+placeholder="Patient Name">
+
+<input type="number" placeholder="Age" min="1" max="90">
+
+<select>
+
+<option>Select Department</option>
+
+<option>Cardiology</option>
+
+<option>Neurology</option>
+
+<option>Orthopedic</option>
+
+<option>Dermatology</option>
+
+<option>General Physician</option>
+
+</select>
+
+<select>
+
+<option>Select Doctor</option>
+
+<option>Dr. Priyal Patel</option>
+
+<option>Dr. Mahi Pathak</option>
+
+<option>Dr. Priya Gupta</option>
+
+</select>
+
+<input
+type="date">
+
+<input
+type="time">
+
+<textarea
+placeholder="Describe Your Problem"
+rows="5"></textarea>
+
+<button>
+
+Book Appointment
+
+</button>
+
+</form>
+
+</div>
+
+<!-- Appointment History -->
+<div class="history">
+
+    <h2>Upcoming Appointment</h2>
+
+    <div class="appointment-list">
+    </div>
+
+</div>
+
+</div>
+<script src="js/appointment.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

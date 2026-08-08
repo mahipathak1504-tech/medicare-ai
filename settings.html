@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Settings | MediCare AI</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/settings.css">
+<link rel="stylesheet" href="css/theme.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<h2>MediCare AI</h2>
+
+<p>Your Smart Health Partner</p>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="ai.html"><i class="fa-solid fa-robot"></i> AI Assistant</a></li>
+<li><a href="emergency.html"><i class="fa-solid fa-truck-medical"></i> Emergency SOS</a></li>
+
+<li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+
+<li class="active"><a href="#"><i class="fa-solid fa-gear"></i> Settings</a></li>
+<li>
+    <a href="home.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+<li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>⚙️ Settings</h1>
+
+<p>Customize your MediCare AI experience.</p>
+
+<div class="settings-container">
+
+<div class="setting-card">
+
+<h3><i class="fa-solid fa-bell"></i> Notifications</h3>
+
+<label class="switch">
+<input type="checkbox" checked>
+<span class="slider"></span>
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<h3><i class="fa-solid fa-moon"></i> Dark Mode</h3>
+
+<label class="switch">
+<input type="checkbox" id="darkModeToggle">
+<span class="slider"></span>
+</label>
+
+</div>
+
+<div class="setting-card">
+
+<h3><i class="fa-solid fa-language"></i> Language</h3>
+
+<select>
+
+<option>English</option>
+
+<option>Hindi</option>
+
+<option>Gujarati</option>
+
+</select>
+
+</div>
+
+<div class="setting-card">
+
+<h3><i class="fa-solid fa-lock"></i> Change Password</h3>
+
+<button class="btn">Change Password</button>
+
+</div>
+
+<div class="setting-card">
+
+<h3><i class="fa-solid fa-right-from-bracket"></i> Logout</h3>
+
+<button class="logout-btn">Logout</button>
+
+</div>
+
+</div>
+
+</div>
+<script src="js/settings.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

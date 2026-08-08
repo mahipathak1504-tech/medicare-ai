@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+display:flex;
+background:#f5f8ff;
+}
+
+/* Sidebar */
+
+.sidebar{
+
+width:270px;
+height:100vh;
+position:fixed;
+left:0;
+top:0;
+background:linear-gradient(180deg,#2563eb,#1e40af);
+padding:30px 20px;
+color:white;
+
+}
+
+.logo{
+
+text-align:center;
+margin-bottom:40px;
+
+}
+
+.logo img{
+
+width:80px;
+height:80px;
+border-radius:50%;
+background:white;
+padding:5px;
+margin-bottom:10px;
+
+}
+
+.logo h2{
+
+font-size:26px;
+
+}
+
+
+.sidebar ul{
+
+list-style:none;
+
+}
+
+.sidebar ul li{
+
+margin:15px 0;
+
+}
+
+.sidebar ul li a{
+
+display:block;
+padding:15px;
+color:white;
+text-decoration:none;
+border-radius:12px;
+transition:.3s;
+
+}
+
+.sidebar ul li a:hover{
+
+background:rgba(255,255,255,.15);
+
+}
+
+.active a{
+
+background:white;
+color:#2563eb !important;
+
+}
+
+/* Main */
+
+.main{
+
+margin-left:270px;
+padding:40px;
+width:100%;
+
+}
+
+.main h1{
+
+color:#111827;
+
+}
+
+.main p{
+
+color:#6b7280;
+margin:10px 0 35px;
+
+}
+
+/* Record Cards */
+
+.record-container{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:25px;
+
+}
+
+.record-card{
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+text-align:center;
+
+}
+
+.record-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.record-card i{
+
+font-size:55px;
+color:#2563eb;
+margin-bottom:20px;
+
+}
+
+.record-card h3{
+
+margin-bottom:10px;
+
+}
+
+.record-card p{
+
+margin-bottom:20px;
+
+}
+
+.record-card button{
+
+padding:12px 25px;
+border:none;
+background:#2563eb;
+color:white;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+.record-card button:hover{
+
+background:#1d4ed8;
+
+}
+
+/* Upload */
+
+.upload-box{
+
+margin-top:40px;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.upload-box h2{
+
+margin-bottom:20px;
+color:#2563eb;
+
+}
+
+.upload-box input{
+
+width:100%;
+padding:15px;
+border:2px dashed #2563eb;
+border-radius:10px;
+margin-bottom:20px;
+
+}
+
+.upload-box button{
+
+padding:15px 30px;
+border:none;
+background:#22c55e;
+color:white;
+border-radius:10px;
+cursor:pointer;
+
+}
+
+.upload-box button:hover{
+
+background:#16a34a;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main{
+
+margin-left:0;
+
+}
+
+.record-container{
+
+grid-template-columns:1fr;
+
+}
+
+}

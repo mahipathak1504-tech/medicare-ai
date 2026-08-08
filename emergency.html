@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Emergency SOS | MediCare AI</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet"
+href="css/emergency.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png">
+
+<h2>MediCare AI</h2>
+<p>Your Smart Health Partner</p>
+
+</div>
+
+<ul>
+
+<li>
+
+<a href="dashboard.html">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</a>
+
+</li>
+
+
+<li>
+
+<a href="ai.html">
+
+<i class="fa-solid fa-robot"></i>
+
+AI Assistant
+
+</a>
+</li>
+    <li class="active">
+    <a href="emergency.html">
+
+    <i class="fa-solid fa-truck-medical"></i>
+
+    Emergency SOS
+
+    </a>
+
+    </li>
+
+<li>
+
+<a href="profile.html">
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</a>
+
+</li>
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+<li>
+    <a href="dashboard.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+<li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>🚨 Emergency SOS</h1>
+
+<p>
+
+Get emergency help instantly.
+
+</p>
+
+<div class="sos-container">
+
+<div class="sos-card">
+
+<h2>Emergency Button</h2>
+<button class="sos-btn" onclick="toggleSiren()">
+    🚨 SOS
+</button>
+
+<audio id="sirenAudio" src="sounds/siren.mp3"></audio>
+
+
+<p>
+
+Press only during an emergency.
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<h2>Emergency Contacts</h2>
+
+<div class="contact">
+
+<i class="fa-solid fa-phone"></i>
+
+<span>Ambulance : 108</span>
+
+</div>
+
+<div class="contact">
+
+<i class="fa-solid fa-phone"></i>
+
+<span>Police : 100</span>
+
+</div>
+
+<div class="contact">
+
+<i class="fa-solid fa-phone"></i>
+
+<span>Fire : 101</span>
+
+</div>
+
+<div class="contact">
+    <i class="fa-solid fa-user"></i>
+
+    <a href="tel:+919426661080">
+        Family Contact
+    </a>
+</div>
+
+</div>
+
+</div>
+<div class="location-card">
+
+    <h2>📍 Live Location</h2>
+
+    <div class="map" id="map">
+        Getting your location...
+    </div>
+
+    <button class="location-btn" onclick="getLocation()">
+        📍 Get My Location
+    </button>
+
+</div>
+
+
+</div>
+<script src="js/emergency.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

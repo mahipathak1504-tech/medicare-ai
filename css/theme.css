@@ -1,0 +1,130 @@
+/* ==========================================
+   GLOBAL DARK MODE
+========================================== */
+
+body.dark-mode {
+    background: #111827 !important;
+    color: #f9fafb !important;
+}
+
+
+/* Main content */
+
+body.dark-mode .main {
+    background: #111827 !important;
+    color: #f9fafb !important;
+}
+
+
+/* Headings */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #f9fafb !important;
+}
+
+
+/* Paragraphs */
+
+body.dark-mode p {
+    color: #d1d5db !important;
+}
+
+
+/* Cards */
+
+body.dark-mode .card,
+body.dark-mode .setting-card,
+body.dark-mode .record-card,
+body.dark-mode .upload-box,
+body.dark-mode .medicine-card,
+body.dark-mode .appointment-card,
+body.dark-mode .contact-card,
+body.dark-mode .sos-card,
+body.dark-mode .location-card,
+body.dark-mode .profile-card,
+body.dark-mode .chat-container,
+body.dark-mode .chat-box {
+    background: #1f2937 !important;
+    color: #f9fafb !important;
+}
+
+
+/* Inputs */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #374151 !important;
+    color: #ffffff !important;
+    border-color: #4b5563 !important;
+}
+
+
+/* Input placeholder */
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9ca3af !important;
+}
+
+
+/* Tables */
+
+body.dark-mode table {
+    background: #1f2937 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+    color: #ffffff !important;
+    border-color: #374151 !important;
+}
+
+
+/* Links */
+
+body.dark-mode a {
+    color: #dbeafe;
+}
+
+
+/* Sidebar stays blue */
+
+body.dark-mode .sidebar {
+    background: linear-gradient(
+        180deg,
+        #1e3a8a,
+        #172554
+    ) !important;
+}
+
+
+/* Buttons */
+
+body.dark-mode button {
+    color: #ffffff;
+}
+
+
+/* Smooth transition */
+
+body,
+.main,
+.card,
+.setting-card,
+.record-card,
+.upload-box,
+input,
+textarea,
+select {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}

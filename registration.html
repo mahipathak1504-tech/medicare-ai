@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediCare AI | Register</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Left Side -->
+
+    <div class="left">
+
+        <div class="logo">
+
+            <i class="fa-solid fa-heart-pulse"></i>
+
+            <h1>MediCare AI</h1>
+
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p>Fill your details to continue.</p>
+
+        <form id="registerForm">
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-user"></i>
+
+                <input type="text" id="fullname" placeholder="Full Name" required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email" id="email" placeholder="Email" required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <input type="tel" id="mobile" placeholder="Mobile Number" required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password" id="password" placeholder="Password" required>
+
+            </div>
+
+            <div class="input-box">
+
+                <i class="fa-solid fa-lock"></i>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+            </div>
+
+            <button type="submit" class="register-btn">
+
+                Register
+
+            </button>
+
+            <p class="login">
+
+                Already have an account?
+
+                <a href="index.html">Login</a>
+
+            </p>
+
+        </form>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right">
+
+        <img src="images\login.png" alt="Register">
+
+    </div>
+
+</div>
+
+<script src="js/register.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>

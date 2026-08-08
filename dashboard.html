@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MediCare AI | Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="stylesheet" href="css/dashboard.css">
+<link rel="stylesheet" href="css/theme.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<div class="logo">
+
+<img src="images/logo.png" alt="Logo">
+
+<h2>MediCare AI</h2>
+
+<p>Your Smart Healthcare Partner</p>
+
+</div>
+
+<ul>
+
+<li class="active"><a href="dashboard.html"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+
+<li><a href="ai.html"><i class="fa-solid fa-robot"></i> AI Assistant</a></li>
+<li><a href="emergency.html"><i class="fa-solid fa-truck-medical"></i> Emergency SOS</a></li>
+
+<li><a href="profile.html"><i class="fa-solid fa-user"></i> Profile</a></li>
+
+<li><a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a></li>
+<li>
+    <a href="home.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back
+    </a>
+</li>
+<li><a href="logout.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+
+</ul>
+
+</div>
+
+<!-- Main -->
+
+<div class="main">
+
+<h1>Welcome, Mahi 👋</h1>
+
+<p>Stay Healthy with MediCare AI</p>
+
+<div class="cards">
+
+<a href="medicine.html" class="card">
+<i class="fa-solid fa-pills"></i>
+<h3>Medicines Reminder</h3>
+<h2>03</h2></a>
+
+<a href="appointment.html" class="card">
+<i class="fa-solid fa-calendar-check"></i>
+<h3>Appointments</h3>
+<h2>02</h2></a>
+
+<a href="records.html" class="card">
+<i class="fa-solid fa-file-medical"></i>
+<h3>Records</h3>
+<h2>05</h2></a>
+
+<a href="notifications.html" class="card">
+<i class="fa-solid fa-bell"></i>
+<h3>Notifications</h3>
+<h2>07</h2></a>
+
+<a href="contact.html" class="card">
+<i class="fa-solid fa-envelope"></i>
+<h3>Contact Us</h3>
+
+<a href="ai.html" class="card">
+<i class="fa-solid fa-robot"></i>
+<h3>AI Tips</h3>
+<h2>12</h2></a>
+
+<a href="emergency.html" class="card">
+<i class="fa-solid fa-truck-medical"></i>
+<h3>Emergency</h3>
+<h2>01</h2></a>
+
+<div class="card">
+<i class="fa-solid fa-glass-water"></i>
+<h3>Water</h3>
+<h2>5/8</h2>
+</div>
+
+</div>
+<!-- ===========================
+        Dashboard Content
+=========================== -->
+
+<div class="dashboard-content">
+
+    <!-- Left Side -->
+
+    <div class="left-section">
+
+        <!-- Today's Medicines -->
+
+        <div class="dashboard-box">
+
+            <h2>💊 Today's Medicines</h2>
+
+            <div class="medicine-item">
+
+                <div>
+
+                    <h3>Paracetamol</h3>
+
+                    <p>08:00 AM</p>
+
+                </div>
+
+                <button class="taken-btn">
+                    Taken
+                </button>
+
+            </div>
+
+            <div class="medicine-item">
+
+                <div>
+
+                    <h3>Vitamin D</h3>
+
+                    <p>09:00 PM</p>
+
+                </div>
+
+                <button class="pending-btn">
+                    Pending
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Appointment -->
+
+        <div class="dashboard-box">
+
+            <h2>📅 Upcoming Appointment</h2>
+
+            <h3>Dr. Raj Patel</h3>
+
+            <p>12 August 2026</p>
+
+            <p>10:30 AM</p>
+
+            <button class="view-btn">
+
+                View Details
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Right Side -->
+
+    <div class="right-section">
+
+
+        <!-- Notification -->
+
+        <div class="dashboard-box">
+
+            <h2>🔔 Notifications</h2>
+
+            <ul>
+
+                <li>Medicine Time - 08:00 AM</li>
+
+                <li>Appointment Tomorrow</li>
+
+                <li>Drink Water 💧</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</div>
+<script src="js/dashboard.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/theme.js"></script>
+</body>
+
+</html>
