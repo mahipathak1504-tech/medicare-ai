@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("Sending registration request...");
 
             const response = await fetch(
-                "http://127.0.0.1:5000/api/register",
+                "https://medicare-ai-2026.onrender.com/api/register",
                 {
                     method: "POST",
 

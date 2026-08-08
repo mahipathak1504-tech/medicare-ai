@@ -3,7 +3,7 @@ const reportFile = document.getElementById("reportFile");
 const recordContainer = document.getElementById("recordContainer");
 const uploadMessage = document.getElementById("uploadMessage");
 
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://medicare-ai-2026.onrender.com";
 
 
 /* ==========================================

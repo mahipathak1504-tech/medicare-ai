@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:5000/api/medicines",
+                    "https://medicare-ai-2026.onrender.com/api/medicines",
                     {
                         method: "POST",
 
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:5000/api/medicines/" +
+                "https://medicare-ai-2026.onrender.com/api/medicines/" +
                 encodeURIComponent(userEmail)
             );
 
@@ -189,7 +189,7 @@ async function deleteMedicine(id) {
     try {
 
         const response = await fetch(
-            "http://127.0.0.1:5000/api/medicines/" + id,
+            "https://medicare-ai-2026.onrender.com/api/medicines/" + id,
             {
                 method: "DELETE"
             }

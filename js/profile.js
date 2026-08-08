@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         try {
 
             const response = await fetch(
-                `http://127.0.0.1:5000/api/profile/${encodeURIComponent(userEmail)}`
+                `https://medicare-ai-2026.onrender.com/api/profile/${encodeURIComponent(userEmail)}`
             );
 
             const data = await response.json();
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             try {
 
                 const response = await fetch(
-                    "http://127.0.0.1:5000/api/profile",
+                    "https://medicare-ai-2026.onrender.com/api/profile",
                     {
                         method: "POST",
 

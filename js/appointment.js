@@ -77,7 +77,7 @@ const reason =
 
                     const response =
                         await fetch(
-                            "http://127.0.0.1:5000/api/appointments",
+                            "https://medicare-ai-2026.onrender.com/api/appointments",
                             {
                                 method: "POST",
 
@@ -159,7 +159,7 @@ const reason =
 
             const response =
                 await fetch(
-                    "http://127.0.0.1:5000/api/appointments/" +
+                    "https://medicare-ai-2026.onrender.com/api/appointments/" +
                     encodeURIComponent(userEmail)
                 );
 
@@ -324,7 +324,7 @@ const reason =
 
             const response =
                 await fetch(
-                    "http://127.0.0.1:5000/api/appointments/" +
+                    "https://medicare-ai-2026.onrender.com/api/appointments/" +
                     id,
                     {
                         method: "DELETE"

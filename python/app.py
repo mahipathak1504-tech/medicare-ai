@@ -804,7 +804,7 @@ def get_records():
 if __name__ == "__main__":
     print("======================================")
     print("   MediCare AI Backend")
-    print("   http://127.0.0.1:5000")
+    print("   https://medicare-ai-2026.onrender.com")
     print("======================================")
     app.run(debug=True, port=5000)
 

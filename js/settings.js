@@ -210,7 +210,7 @@ changePasswordButton.addEventListener(
         try {
 
             const response = await fetch(
-                "http://127.0.0.1:5000/api/change-password",
+                "https://medicare-ai-2026.onrender.com/api/change-password",
                 {
                     method: "POST",
 
