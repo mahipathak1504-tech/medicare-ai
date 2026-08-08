@@ -21,7 +21,7 @@ async function sendMessage() {
     try {
 
         const response = await fetch(
-           "https://medicare-ai-2026.onrender.com/api/chat", ,
+           "https://medicare-ai-2026.onrender.com/api/chat",
             {
                 method: "POST",
 
